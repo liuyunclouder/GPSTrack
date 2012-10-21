@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4235495116343406002FC217 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4235495016343406002FC217 /* UIKit.framework */; };
+		4235495316343406002FC217 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4235495216343406002FC217 /* Foundation.framework */; };
+		4235495516343406002FC217 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4235495416343406002FC217 /* CoreGraphics.framework */; };
+		4235495B16343406002FC217 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4235495916343406002FC217 /* InfoPlist.strings */; };
+		4235495D16343406002FC217 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4235495C16343406002FC217 /* main.m */; };
+		4235496116343406002FC217 /* OTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4235496016343406002FC217 /* OTAppDelegate.m */; };
+		4235496316343406002FC217 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4235496216343406002FC217 /* Default.png */; };
+		4235496516343406002FC217 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4235496416343406002FC217 /* Default@2x.png */; };
+		4235496716343406002FC217 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4235496616343406002FC217 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4235494C16343406002FC217 /* GPSTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4235495016343406002FC217 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4235495216343406002FC217 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4235495416343406002FC217 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4235495816343406002FC217 /* GPSTrack-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPSTrack-Info.plist"; sourceTree = "<group>"; };
+		4235495A16343406002FC217 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4235495C16343406002FC217 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4235495E16343406002FC217 /* GPSTrack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPSTrack-Prefix.pch"; sourceTree = "<group>"; };
+		4235495F16343406002FC217 /* OTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OTAppDelegate.h; sourceTree = "<group>"; };
+		4235496016343406002FC217 /* OTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OTAppDelegate.m; sourceTree = "<group>"; };
+		4235496216343406002FC217 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4235496416343406002FC217 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4235496616343406002FC217 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4235494916343406002FC217 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4235495116343406002FC217 /* UIKit.framework in Frameworks */,
+				4235495316343406002FC217 /* Foundation.framework in Frameworks */,
+				4235495516343406002FC217 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4235494116343406002FC217 = {
+			isa = PBXGroup;
+			children = (
+				4235495616343406002FC217 /* GPSTrack */,
+				4235494F16343406002FC217 /* Frameworks */,
+				4235494D16343406002FC217 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4235494D16343406002FC217 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4235494C16343406002FC217 /* GPSTrack.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4235494F16343406002FC217 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4235495016343406002FC217 /* UIKit.framework */,
+				4235495216343406002FC217 /* Foundation.framework */,
+				4235495416343406002FC217 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4235495616343406002FC217 /* GPSTrack */ = {
+			isa = PBXGroup;
+			children = (
+				4235495F16343406002FC217 /* OTAppDelegate.h */,
+				4235496016343406002FC217 /* OTAppDelegate.m */,
+				4235495716343406002FC217 /* Supporting Files */,
+			);
+			path = GPSTrack;
+			sourceTree = "<group>";
+		};
+		4235495716343406002FC217 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4235495816343406002FC217 /* GPSTrack-Info.plist */,
+				4235495916343406002FC217 /* InfoPlist.strings */,
+				4235495C16343406002FC217 /* main.m */,
+				4235495E16343406002FC217 /* GPSTrack-Prefix.pch */,
+				4235496216343406002FC217 /* Default.png */,
+				4235496416343406002FC217 /* Default@2x.png */,
+				4235496616343406002FC217 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4235494B16343406002FC217 /* GPSTrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4235496A16343406002FC217 /* Build configuration list for PBXNativeTarget "GPSTrack" */;
+			buildPhases = (
+				4235494816343406002FC217 /* Sources */,
+				4235494916343406002FC217 /* Frameworks */,
+				4235494A16343406002FC217 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPSTrack;
+			productName = GPSTrack;
+			productReference = 4235494C16343406002FC217 /* GPSTrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4235494316343406002FC217 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OT;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = OpenThread;
+			};
+			buildConfigurationList = 4235494616343406002FC217 /* Build configuration list for PBXProject "GPSTrack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4235494116343406002FC217;
+			productRefGroup = 4235494D16343406002FC217 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4235494B16343406002FC217 /* GPSTrack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4235494A16343406002FC217 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4235495B16343406002FC217 /* InfoPlist.strings in Resources */,
+				4235496316343406002FC217 /* Default.png in Resources */,
+				4235496516343406002FC217 /* Default@2x.png in Resources */,
+				4235496716343406002FC217 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4235494816343406002FC217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4235495D16343406002FC217 /* main.m in Sources */,
+				4235496116343406002FC217 /* OTAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4235495916343406002FC217 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4235495A16343406002FC217 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4235496816343406002FC217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4235496916343406002FC217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4235496B16343406002FC217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPSTrack/GPSTrack-Prefix.pch";
+				INFOPLIST_FILE = "GPSTrack/GPSTrack-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4235496C16343406002FC217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GPSTrack/GPSTrack-Prefix.pch";
+				INFOPLIST_FILE = "GPSTrack/GPSTrack-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4235494616343406002FC217 /* Build configuration list for PBXProject "GPSTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4235496816343406002FC217 /* Debug */,
+				4235496916343406002FC217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4235496A16343406002FC217 /* Build configuration list for PBXNativeTarget "GPSTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4235496B16343406002FC217 /* Debug */,
+				4235496C16343406002FC217 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4235494316343406002FC217 /* Project object */;
+}
