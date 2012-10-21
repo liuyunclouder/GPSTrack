@@ -16,6 +16,12 @@
 		4235496316343406002FC217 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4235496216343406002FC217 /* Default.png */; };
 		4235496516343406002FC217 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4235496416343406002FC217 /* Default@2x.png */; };
 		4235496716343406002FC217 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4235496616343406002FC217 /* Default-568h@2x.png */; };
+		423549701634342A002FC217 /* OTStorageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4235496F1634342A002FC217 /* OTStorageHelper.m */; };
+		423549741634360D002FC217 /* OTGPSInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 423549731634360D002FC217 /* OTGPSInfoViewController.m */; };
+		42354977163436FA002FC217 /* OTGPSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 42354976163436FA002FC217 /* OTGPSHelper.m */; };
+		4235497916343730002FC217 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4235497816343730002FC217 /* CoreLocation.framework */; };
+		4235498A1634434C002FC217 /* OTLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 423549891634434C002FC217 /* OTLocation.m */; };
+		42354991163449E7002FC217 /* OTLocalNotificationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 42354990163449E7002FC217 /* OTLocalNotificationHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,17 @@
 		4235496216343406002FC217 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4235496416343406002FC217 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4235496616343406002FC217 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4235496E1634342A002FC217 /* OTStorageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTStorageHelper.h; sourceTree = "<group>"; };
+		4235496F1634342A002FC217 /* OTStorageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTStorageHelper.m; sourceTree = "<group>"; };
+		423549721634360D002FC217 /* OTGPSInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTGPSInfoViewController.h; sourceTree = "<group>"; };
+		423549731634360D002FC217 /* OTGPSInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTGPSInfoViewController.m; sourceTree = "<group>"; };
+		42354975163436FA002FC217 /* OTGPSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTGPSHelper.h; sourceTree = "<group>"; };
+		42354976163436FA002FC217 /* OTGPSHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTGPSHelper.m; sourceTree = "<group>"; };
+		4235497816343730002FC217 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		423549881634434C002FC217 /* OTLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTLocation.h; sourceTree = "<group>"; };
+		423549891634434C002FC217 /* OTLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTLocation.m; sourceTree = "<group>"; };
+		4235498F163449E7002FC217 /* OTLocalNotificationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTLocalNotificationHelper.h; sourceTree = "<group>"; };
+		42354990163449E7002FC217 /* OTLocalNotificationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTLocalNotificationHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4235497916343730002FC217 /* CoreLocation.framework in Frameworks */,
 				4235495116343406002FC217 /* UIKit.framework in Frameworks */,
 				4235495316343406002FC217 /* Foundation.framework in Frameworks */,
 				4235495516343406002FC217 /* CoreGraphics.framework in Frameworks */,
@@ -68,6 +86,7 @@
 		4235494F16343406002FC217 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4235497816343730002FC217 /* CoreLocation.framework */,
 				4235495016343406002FC217 /* UIKit.framework */,
 				4235495216343406002FC217 /* Foundation.framework */,
 				4235495416343406002FC217 /* CoreGraphics.framework */,
@@ -80,6 +99,8 @@
 			children = (
 				4235495F16343406002FC217 /* OTAppDelegate.h */,
 				4235496016343406002FC217 /* OTAppDelegate.m */,
+				42354971163435FC002FC217 /* ViewControllers */,
+				4235496D16343414002FC217 /* Helpers */,
 				4235495716343406002FC217 /* Supporting Files */,
 			);
 			path = GPSTrack;
@@ -97,6 +118,30 @@
 				4235496616343406002FC217 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4235496D16343414002FC217 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4235496E1634342A002FC217 /* OTStorageHelper.h */,
+				4235496F1634342A002FC217 /* OTStorageHelper.m */,
+				42354975163436FA002FC217 /* OTGPSHelper.h */,
+				42354976163436FA002FC217 /* OTGPSHelper.m */,
+				423549881634434C002FC217 /* OTLocation.h */,
+				423549891634434C002FC217 /* OTLocation.m */,
+				4235498F163449E7002FC217 /* OTLocalNotificationHelper.h */,
+				42354990163449E7002FC217 /* OTLocalNotificationHelper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		42354971163435FC002FC217 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				423549721634360D002FC217 /* OTGPSInfoViewController.h */,
+				423549731634360D002FC217 /* OTGPSInfoViewController.m */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +212,11 @@
 			files = (
 				4235495D16343406002FC217 /* main.m in Sources */,
 				4235496116343406002FC217 /* OTAppDelegate.m in Sources */,
+				423549701634342A002FC217 /* OTStorageHelper.m in Sources */,
+				423549741634360D002FC217 /* OTGPSInfoViewController.m in Sources */,
+				42354977163436FA002FC217 /* OTGPSHelper.m in Sources */,
+				4235498A1634434C002FC217 /* OTLocation.m in Sources */,
+				42354991163449E7002FC217 /* OTLocalNotificationHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
