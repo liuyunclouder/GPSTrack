@@ -17,6 +17,7 @@
 
 + (NSArray *)locationArray;
 
-+ (void)addLocation:(CLLocation *)location;
+//如果此次添加和上次坐标一样，则不更新，也不添加
++ (BOOL)addLocation:(CLLocation *)location;
 
 @end

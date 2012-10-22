@@ -26,27 +26,22 @@
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
-    [OTStorageHelper saveToDisk];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    [OTStorageHelper saveToDisk];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
-
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
-    [OTStorageHelper saveToDisk];
 }
 
 @end

@@ -65,9 +65,11 @@
 - (void)didUpdateLocations:(NSArray *)locations
 {
     CLLocation *object = locations[0];
-    [OTStorageHelper addLocation:object];
-    [self updateTableView];
-    [OTLocalNotificationHelper directNotificationWithString:[object description]];
+    if([OTStorageHelper addLocation:object])
+    {
+        [self updateTableView];
+        [OTLocalNotificationHelper directNotificationWithString:[object description]];
+    }
 }
 
 @end

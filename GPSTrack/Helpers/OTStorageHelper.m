@@ -58,10 +58,21 @@
     return [NSArray arrayWithArray:array];
 }
 
-+ (void)addLocation:(CLLocation *)location
+//如果此次添加和上次坐标一样，则不更新，也不添加
++ (BOOL)addLocation:(CLLocation *)location
 {
     NSMutableArray *array = [OTStorageHelper instance].locationArray;
+    CLLocation *lastLocation = array.lastObject;
+    if (lastLocation)
+    {
+        CLLocationDistance distance = [lastLocation distanceFromLocation:location];
+        if (distance == 0.0f) {
+            return NO;
+        }
+    }
     [array addObject:location];
+    [OTStorageHelper saveToDisk];
+    return YES;
 }
 
 @end
