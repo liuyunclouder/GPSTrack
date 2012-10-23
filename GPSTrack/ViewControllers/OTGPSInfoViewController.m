@@ -57,18 +57,35 @@
         cell.textLabel.numberOfLines = 0;
     }
     CLLocation *location = _dataSourceArray[indexPath.row];
-    cell.textLabel.text = [location description];
+    NSString *distanceString = @"";
+    if (indexPath.row != 0)
+    {
+        CLLocation *lastLocation = _dataSourceArray[indexPath.row - 1];
+        CLLocationDistance distance = [location distanceFromLocation:lastLocation];
+        distanceString = [NSString stringWithFormat:@" %f",distance];
+    }
+    cell.textLabel.text = [[location description] stringByAppendingString:distanceString];
 	return cell;
-
 }
 
 - (void)didUpdateLocations:(NSArray *)locations
 {
     CLLocation *object = locations[0];
+    CLLocation *lastLocation = _dataSourceArray.lastObject;
     if([OTStorageHelper addLocation:object])
     {
         [self updateTableView];
-        [OTLocalNotificationHelper directNotificationWithString:[object description]];
+        if (lastLocation)
+        {
+            [OTLocalNotificationHelper directNotificationWithString:[object description]];
+        }
+        else
+        {
+            CLLocationDistance distance = [object distanceFromLocation:lastLocation];
+            NSString *distanceString = [NSString stringWithFormat:@" %f",distance];
+            NSString *notificationString = [[object description] stringByAppendingString:distanceString];
+            [OTLocalNotificationHelper directNotificationWithString:notificationString];
+        }
     }
 }
 
