@@ -28,6 +28,18 @@
     return helper;
 }
 
++ (BOOL)isLocationServiceAccessble
+{
+    float systemVersion = [[UIDevice currentDevice].systemVersion floatValue];
+    if (systemVersion < 6.0 && systemVersion >= 4.2)
+    {
+        CLAuthorizationStatus status = [CLLocationManager authorizationStatus];//此方法最低需求4.2
+        BOOL accessble = (status != kCLAuthorizationStatusDenied);
+        return accessble;
+    }
+    return YES;
+}
+
 + (void)beginUpDateGPSInfo
 {
     if ([CLLocationManager significantLocationChangeMonitoringAvailable])
