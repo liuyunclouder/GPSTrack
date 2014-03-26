@@ -46,6 +46,7 @@
     NSString *arrayPath = [OTStorageHelper storageFilePath];
     NSData *data = [[NSData alloc] initWithContentsOfFile:arrayPath];
     NSMutableArray *array = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    
     if (array)
     {
         [OTStorageHelper instance].locationArray = array;

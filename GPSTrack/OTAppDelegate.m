@@ -14,7 +14,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+//    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"GPSTrack" ofType:@"plist"];
+//    NSMutableDictionary *data = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+//    NSLog(@"%@", data);//直接打印数据。
+    
+    
     [OTStorageHelper wakeFromDisk];
+    __unused NSString *str = @"tree";
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.

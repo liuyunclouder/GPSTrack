@@ -286,11 +286,14 @@
 		4235496B16343406002FC217 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: 婷婷 庄 (QJPQNU3HAD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 婷婷 庄 (QJPQNU3HAD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GPSTrack/GPSTrack-Prefix.pch";
 				INFOPLIST_FILE = "GPSTrack/GPSTrack-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D15316DE-4767-4BF0-88C3-582B92957CB6";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -298,11 +301,14 @@
 		4235496C16343406002FC217 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: 婷婷 庄 (QJPQNU3HAD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 婷婷 庄 (QJPQNU3HAD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GPSTrack/GPSTrack-Prefix.pch";
 				INFOPLIST_FILE = "GPSTrack/GPSTrack-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D15316DE-4767-4BF0-88C3-582B92957CB6";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
